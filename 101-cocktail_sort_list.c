@@ -68,7 +68,7 @@ void cocktail_sort_list(listint_t **list)
 			if (p->n > p->next->n)
 			{
 				sorted = 0;
-				switch_nodes(list, &p);
+				switch_node(list, &p);
 				print_list(*list);
 			}
 			else
@@ -83,7 +83,7 @@ void cocktail_sort_list(listint_t **list)
 			{
 				sorted = 0;
 				p = p->prev;
-				switch_nodes(list, &p);
+				switch_node(list, &p);
 				print_list(*list);
 			}
 			else
